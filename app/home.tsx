@@ -298,7 +298,8 @@ export default function Home() {
 
             <View className="gap-2 bg-colorBGCard  m-5 rounded-lg p-5">
               <Text className="font-bold text-2xl">
-                O preço por {getTypeQntText(valuePicker)} do primeiro produto
+                O preço por {getTypeQntText(valuePicker)} do produto{" "}
+                {nameProduct1 ? <Text>'{nameProduct1}'</Text> : "1"}
                 (com {qntProduct1} {getTypeQntText(valuePicker)}) é de R${" "}
                 {new Intl.NumberFormat("pt-BR", {
                   minimumFractionDigits: 2,
@@ -308,7 +309,8 @@ export default function Home() {
             </View>
             <View className="gap-2 bg-colorBGCard  m-5 rounded-lg p-5">
               <Text className=" font-bold text-2xl">
-                O preço por {getTypeQntText(valuePicker)} do segundo produto
+                O preço por {getTypeQntText(valuePicker)} do produto{" "}
+                {nameProduct2 ? <Text>'{nameProduct2}'</Text> : "2"}
                 (com {qntProduct2} {getTypeQntText(valuePicker)}) é de R${" "}
                 {new Intl.NumberFormat("pt-BR", {
                   minimumFractionDigits: 2,

@@ -17,6 +17,8 @@ export default function OnboardingScreen() {
     <Onboarding
       onSkip={finishOnboarding}
       onDone={finishOnboarding}
+      skipLabel="Pular"
+      nextLabel="Próximo"
       pages={[
         {
           backgroundColor: "#3A8DFF",
