@@ -1,6 +1,6 @@
 import React from "react";
 import Onboarding from "react-native-onboarding-swiper";
-import { Text, TouchableOpacity, View } from "react-native";
+import { TouchableOpacity, View } from "react-native";
 import LottieView from "lottie-react-native";
 import { useRouter } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
