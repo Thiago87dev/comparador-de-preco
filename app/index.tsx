@@ -13,6 +13,7 @@ export default function Index() {
         const value = await AsyncStorage.getItem('hasSeenOnboarding');
         if (value === null) {
           router.replace('/onboarding');  // Se não viu, vai pro Onboarding
+          router.replace('/home');
         } else {
           router.replace('/home');  // Se já viu, vai pro Home (ou onde quiser)
         }
